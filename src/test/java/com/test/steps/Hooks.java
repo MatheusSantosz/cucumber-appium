@@ -30,6 +30,7 @@ public class Hooks {
 
         }else if (platform.equals("ios")){
             DesiredCapabilities capabilities = new DesiredCapabilities();
+            System.out.println("Plataforma " + platform);
             capabilities.setCapability("app", "C:\\Users\\Windows\\IdeaProjects\\cucumberAppium\\apps\\app-debug.apk");
             capabilities.setCapability("deviceName", "emulator-5554");
             capabilities.setCapability("platFormName", "Android");
@@ -37,6 +38,7 @@ public class Hooks {
 
         }else if (platform.equals("devicefarm")){
             DesiredCapabilities capabilities = new DesiredCapabilities();
+            System.out.println("Plataforma " + platform);
             capabilities.setCapability("app", "C:\\Users\\Windows\\IdeaProjects\\cucumberAppium\\apps\\app-debug.apk");
             capabilities.setCapability("deviceName", "emulator-5554");
             capabilities.setCapability("platFormName", "Android");

@@ -12,7 +12,13 @@ public class LoginSteps {
     public void informe_usuario_senha(String usuario, String senha) throws InterruptedException {
         for(int x = 0; x<= 2; x++) {
             login.writeEmail(usuario);
+
+        }
+        int i = 2;
+        while (i <=2){
             login.writePassword(senha);
+            i ++;
+
         }
 
     }

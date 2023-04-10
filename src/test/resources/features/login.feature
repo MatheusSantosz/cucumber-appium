@@ -2,7 +2,7 @@
 
   @test-2
 Funcionalidade: Login
-  //Contexto: Logar no app
+  //mvnContexto: Logar no app
 
   @test
   Cenário:Login com sucesso
