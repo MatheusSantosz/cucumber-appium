@@ -10,9 +10,10 @@ public class LoginSteps {
 
     @Dado("^que eu informe \"([^\"]*)\" e \"([^\"]*)\"$")
     public void informe_usuario_senha(String usuario, String senha) throws InterruptedException {
-        login.writeEmail(usuario);
-        login.writePassword(senha);
-
+        for(int x = 0; x<= 2; x++) {
+            login.writeEmail(usuario);
+            login.writePassword(senha);
+        }
 
     }
     @Quando("^eu clicar no botao logar$")
