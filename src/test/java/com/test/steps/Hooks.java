@@ -10,9 +10,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Hooks {
+    public static String platform = "";
     private static AppiumDriver<?> driver;
 
     public static AppiumDriver<?> validateDriver()throws MalformedURLException{
+
+        platform = System.getProperty("platform");
+        System.out.println("Plataforma " + platform);
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("app","C:\\Users\\Windows\\IdeaProjects\\cucumberAppium\\apps\\app-debug.apk");
         capabilities.setCapability("deviceName","emulator-5554");
